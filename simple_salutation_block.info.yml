@@ -1,0 +1,4 @@
+name: Simple Salutation Block
+type: module
+description: 'Adds a salutation block for authenticated users'
+core_version_requirement: ^8 || ^9

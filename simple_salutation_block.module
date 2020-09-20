@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file Simple Salutation Module file.
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+function simple_salutation_block_theme($existing, $type, $theme, $path) {
+  $variables = [
+    'simple_salutation_block' => [
+      'variables' => [
+        'user_greeting' => NULL,
+      ],
+      'template' => 'simple_salutation_block'
+    ]
+  ];
+
+  return $variables;
+}

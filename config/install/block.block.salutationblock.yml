@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - simple_salutation_block
+    - user
+  theme:
+    - bartik
+id: salutationblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: salutation_block
+settings:
+  id: salutation_block
+  label: 'Salutation block'
+  provider: simple_salutation_block
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

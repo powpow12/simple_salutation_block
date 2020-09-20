@@ -1,0 +1,7 @@
+simple_salutation_form.settings:
+  path: '/admin/config/simple_salutation/settings'
+  defaults:
+    _form: '\Drupal\simple_salutation_block\Form\SimpleSalutationForm'
+    _title: 'Greetings for Simple Salutation Block'
+  requirements:
+    _permission: 'administer site configuration'

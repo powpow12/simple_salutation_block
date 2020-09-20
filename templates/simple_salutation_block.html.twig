@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Default theme implementation to print Lorem ipsum text.
+ *
+ * Available variables:
+ *   - source_text
+ *
+ * @see template_preprocess_loremipsum()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="simple_salutation_block">
+  <p>
+    {% for item in user_greeting %}
+      {{ item }}<br/>
+    {% endfor %}
+  </p>
+</div>
